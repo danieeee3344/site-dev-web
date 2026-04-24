@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>
+            Nome: <input type="text" id="fname" name="fname"><br>
+            Senha: <input type="password"><br>
+        </label>
+        <label for="textarea">Comentários: </label><br>
+        <textarea rows="10" cols="20"></textarea><br>
+        Estado <select>
+            <option>AC</option>
+            <option>AL</option>
+            <option>AM</option>
+            <option>AP</option>
+            <option>BA</option>
+            <option>CE</option>
+            <option>DF</option>
+            <option>ES</option>
+            <option>GO</option>
+            <option>MA</option>
+            <option>MG</option>
+            <option>MS</option>
+            <option>MT</option>
+            <option>PA</option>
+            <option>PB</option>
+            <option>PE</option>
+            <option>PI</option>
+            <option>PR</option>
+            <option>RJ</option>
+            <option>RN</option>
+            <option>RO</option>
+            <option>RR</option>
+            <option>RS</option>
+            <option>SC</option>
+            <option>SE</option>
+            <option>SP</option>
+            <option>TO</option>
+        </select>
+        <input type="button"> <!-- insere um botão no formulário --> <br>
+        <input type="checkbox"> <!-- cria uma caixa de múltiplas escolhas --> <br>
+        <input type="color"> <!-- cria um seletor de cores --> <br>
+        <input type="date"> <!-- cria uma caixa de data --> <br>
+        <input type="datetime-local"> <!-- caixa de data e hora --><br>
+        <input type="email"> <!-- cria algo para inserir e-mail --><br>
+        <input type="file"> <!-- caixa para enviar arquivo --><br>
+        <input type="hidden"><input type="hidden"><br>
+        <!-- Define um campo de entrada oculto (não visível para o usuário).
+        Um campo oculto permite que os desenvolvedores web incluam dados que não podem ser vistos ou modificados 
+        pelos usuários quando um formulário é enviado.
+        Um campo oculto geralmente armazena qual registro do banco de dados 
+        precisa ser atualizado quando o formulário é enviado -->
+        <input type="image"> <!-- caixa de envio de arquivos de imagem -->
+        <input type="month"><br> <!-- permite ao usuário selecionar um mês e um ano -->
+        <input type="number"><br> <!-- define um campo de entrada numérica. Há restrições de entrada:
+        *Atributo* *Descrição*
+        checked Especifica que um campo de entrada deve ser pré-selecionado quando a página carrega (para type="checkbox" ou type="radio")
+        disabled Especifica que um campo de entrada deve ser desabilitado
+        max Especifica o valor máximo para um campo de entrada
+        maxlength Especifica o número máximo de caracteres para um campo de entrada
+        min Especifica o valor mínimo para um campo de entrada
+        pattern Especifica uma expressão regular para verificar o valor de entrada
+        readonly Especifica que um campo de entrada é somente leitura (não pode ser alterado)
+        required Especifica que um campo de entrada é obrigatório (deve ser preenchido)
+        size Especifica a largura (em caracteres) de um campo de entrada
+        step Especifica os intervalos numéricos válidos para um campo de entrada
+        value Especifica o valor padrão para um campo de entrada-->
+        <input type="password"><br>
+        <input type="radio"><br>
+        <input type="range"><br>
+        <input type="reset"><br>
+        <h2>Campo de Pesquisa</h2>
+
+        <p>O atributo <strong>input type="search"</strong> é usado para campos de pesquisa (funciona de forma semelhante a um campo de texto comum):</p>
+
+        <form action="/action_page.php">
+            <label for="gsearch">Pesquisar no Google:</label>
+            <input type="search" id="gsearch" name="gsearch">
+            <input type="submit" value="Enviar">
+        </form>
+        <input type="submit"><br>
+        <h2>Campo de Telefone</h2>
+        <p>O atributo <strong>input type="tel"</strong> é usado para campos de entrada que devem conter um número de telefone:</p>
+
+        <form action="/action_page.php">
+            <label for="phone">Digite o número do telefone:</label><br><br>
+            <input type="tel" id="phone" name="phone" placeholder="11-98765-4321" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required><br><br>
+            <small>Formato: 11-98765-4321</small><br><br>
+        </form>
+        <input type="submit" value="Enviar">
+        <input type="text"><br>
+        <input type="time"><br>
+        <input type="url"><br>
+        <input type="week"><br>
+    </form>
+
+</body>
+</html>
